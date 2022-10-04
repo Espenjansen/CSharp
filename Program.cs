@@ -6,7 +6,7 @@ Console.WriteLine("Hei " + navn);
 int score = 0;
 Console.WriteLine("Nå skal vi ha en liten quiz.");
 
-// spørsmålet
+// spørsmål 1
 Console.WriteLine("Spørsmål 1: Et hjerte har for første gang blitt transplantert fra et dyr til et menneske, fra hva slags dyr?");
 
 // svar alternativ
@@ -39,7 +39,6 @@ switch (svar1int)
 }
 
 Console.WriteLine("score: " + score);
-
 
 
 // spørsmålet 2
@@ -77,14 +76,14 @@ switch (svar2int)
 Console.WriteLine("score: " + score);
 
 
-
-Console.WriteLine("Spørsmål 3: ?");
+// spørsmål 3
+Console.WriteLine("Spørsmål 3: hvor fort er lydens hastighet?");
 
 // svar alternativ
-Console.WriteLine ("1. ");
-Console.WriteLine ("2. ");
-Console.WriteLine ("3. ");
-Console.WriteLine ("4. ");
+Console.WriteLine ("1. 1236 km/t");
+Console.WriteLine ("2. 1238 km/t");
+Console.WriteLine ("3. 1234 km/t");
+Console.WriteLine ("4. 1239 km/t");
 
 // du svarer med å skrive tall
 string svar3 = Console.ReadLine();
@@ -111,3 +110,45 @@ switch (svar3int)
 }
 
 Console.WriteLine("score: " + score);
+
+
+// spørsmål 3
+Console.WriteLine("Spørsmål 4: hvert år går månen litt lenger vekk fra jorden, hvor langt vekk går den i året?");
+
+// svar alternativ
+Console.WriteLine ("1. 1 km");
+Console.WriteLine ("2. 300 m");
+Console.WriteLine ("3. 4 cm");
+Console.WriteLine ("4. 1 dm");
+
+// du svarer med å skrive tall
+string svar4 = Console.ReadLine();
+int svar4int = int.Parse(svar4);
+
+Console.Clear();
+
+switch (svar4int)
+{
+    case 1:
+        Console.WriteLine("feil svar");
+        break;
+    case 2:
+        Console.WriteLine("feil svar");
+        
+        break;
+    case 3:
+        Console.WriteLine("Rett svar");
+        score++;
+        break;
+    case 4:
+        Console.WriteLine("feil svar");
+        break;
+}
+
+Console.WriteLine("Score: " + score);
+
+
+
+
+
+
