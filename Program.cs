@@ -3,8 +3,12 @@ Console.WriteLine("Skriv navnet ditt:");
 string navn = Console.ReadLine();
 Console.Clear();
 Console.WriteLine("Hei " + navn);
+Console.WriteLine("[1] for quiz");
+string valg = Console.ReadLine();
+
 int score = 0;
 Console.WriteLine("Nå skal vi ha en liten quiz.");
+
 
 // spørsmål 1
 Console.WriteLine("Spørsmål 1: Et hjerte har for første gang blitt transplantert fra et dyr til et menneske, fra hva slags dyr?");
