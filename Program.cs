@@ -7,11 +7,13 @@ Console.WriteLine("[1] for quiz");
 Console.WriteLine("[2] Quit");
 string Svar = Console.ReadLine();
 
-
+// gir deg alternativet til og exite eller spille ferdig quizen
+// quiz
 if (Svar=="1"){
     Quiz();
 };
 
+// exti
 if (Svar=="2"){
     System.Environment.Exit(1);
 }
@@ -172,7 +174,7 @@ static void Quiz(){
     }
 
  
-
+    // viser scoren din etter quizen i forhold til hvor mange spørsmål det var
     Console.WriteLine("Quizen er ferdig du fikk: " + score + " av 4 poeng.");
 
     Thread.Sleep(5000);
