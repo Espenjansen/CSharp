@@ -173,9 +173,9 @@ static void Quiz(){
 
  
 
-    Console.WriteLine("Score: " + score);
+    Console.WriteLine("Quizen er ferdig du fikk: " + score + " av 4 poeng.");
 
-    Thread.Sleep(2000);
+    Thread.Sleep(5000);
     Console.Clear();
 }
 
